@@ -1,11 +1,20 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" ng-app="myfirstapp">
   <head>
     <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+    <script src=app.js></script>
     <title>Hello Rahul Sai!!</title>
   </head>
   <body>
     <p>Train insane or Remain same</p>
+    <div ng-controller="myfirstcontroller">
+      <input type="text" ng-model="name"><br>
+      inside my input is {{name}}<br>
+      {{myfunction()}}
+
+
+    </div>
 
   </body>
 </html>
