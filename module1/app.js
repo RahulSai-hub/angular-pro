@@ -10,11 +10,12 @@
                 let arrayOfItems = $scope.lunch.split(',');
                 let counter = 0;
 
-                arrayOfItems.forEach((item) => {
+                arrayOfItems.forEach((item)=> {
                     if (item != false) {
                         counter++;
                     }
                 });
+
 
                 if (counter > 0 && counter < 4){
                     $scope.message = 'Enjoy!';
